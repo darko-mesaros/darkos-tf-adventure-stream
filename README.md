@@ -5,8 +5,8 @@
 If you are stumbling onto this repository looking for an awesome Terraform
 project, you **may** be in the wrong place. But in any case, welcome! This
 repository serves as a single point of reference for a
-[series](https://youtube.com/ruptwelve) of Twitch/Youtube
-streams that I am doing on the topic of Terraform.
+[series](https://www.youtube.com/playlist?list=PLbTckSyY9fPYgIYnIAfHmhyXLAHHCQ8LA)
+of Twitch/Youtube streams that I am doing on the topic of Terraform.
 
 Here is the gist of it:
 I am, by no means, an expert in Terraform - and by that I mean, I've tried it
@@ -27,7 +27,7 @@ and fun stuff as well.
 
 ## Episode 01
 
-Link to the [YouTube video](https://youtube.com/ruptwelve).
+Link to the [YouTube video](https://youtu.be/4zvueYsCcoo).
 
 In the first episode we were going down with the basics:
 
