@@ -1,5 +1,7 @@
 # Darko's Terraform Adventure
 
+![header](/assets/githubheader.png)
+
 If you are stumbling onto this repository looking for an awesome Terraform
 project, you **may** be in the wrong place. But in any case, welcome! This
 repository serves as a single point of reference for a
@@ -25,7 +27,8 @@ and fun stuff as well.
 
 ## Episode 01
 
-Link to the [YouTube video](https://youtube.com/ruptwelve)
+Link to the [YouTube video](https://youtube.com/ruptwelve).
+
 In the first episode we were going down with the basics:
 
 - Installing Terraform on my laptop
