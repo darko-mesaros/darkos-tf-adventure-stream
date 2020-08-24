@@ -72,6 +72,36 @@ The output of Episode two is the following:
 - There is an IAM instance profile created and attached to the EC2 so that it
   may be managed by AWS Systems Manager (connect to it via Session Manager)
 
+## Episode 03
+
+Link to the [YouTube video](https://youtu.be/iCKKFeJoWHw).
+
+In the third episode of the streaming series we expanded our AWS Setup a bit.
+That is, we moved away from using a single EC2 instance as a Web Server, to
+using an AWS Auto Scaling group. I've struggled a bit with some IAM instance
+profile parameter consistency, but I figured it out later on via the Terraform
+docs.
+
+Here is what we have done in Episode three:
+
+- Transitioned from an EC2 instance to an AWS Auto Scaling group, so we can have
+  a cluster of web servers available for us.
+- Added an Application Load Balancer in front of the instances in that Auto
+  Scaling group so that the network traffic can go to either of the web servers
+  launched.
+
+One thing to **note** from this episode, I had to hardcode the VPC Subnets to
+the LoadBalancer, as I could not find a dynamic way of doing this in Terraform -
+so this is still pending.
+
+The output of Episode three is the following:
+
+- Web servers that are launched from an AWS Auto Scaling group (3 in total)
+- Application Load balancer that sits in front of the Web servers
+- VPC, Subnets, and the rest of the Network stuff
+- IAM Permissions (IAM Instance role) that allow our instance to be managed by
+  AWS Systems Manager.
+
 ```terraform
 # More to come
 ```
