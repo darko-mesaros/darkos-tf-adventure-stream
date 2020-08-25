@@ -1,11 +1,11 @@
 variable "region" {
-  default = "eu-west-1"
+  type=string
 }
 
 variable "instance_type" {
-  default = "t3.micro"
+  type=string
 }
 
 variable "environment" {
-  default = "PROD"
+  type=string
 }

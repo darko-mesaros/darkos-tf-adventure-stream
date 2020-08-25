@@ -1,6 +1,6 @@
 # --- launch template ---
 resource "aws_launch_template" "TFWebServers" {
-  name_prefix = "TFWebServe"
+  name_prefix = "${var.environment}_jTFWebServe"
   image_id = "ami-07d9160fa81ccffb5"
   instance_type = var.instance_type
   user_data = filebase64("userdata.sh")
@@ -21,7 +21,7 @@ resource "aws_autoscaling_group" "TFWebServersASG" {
   desired_capacity   = 2
   max_size           = 2
   min_size           = 2
-  vpc_zone_identifier = [aws_subnet.public_subnet01.id, aws_subnet.public_subnet02.id]
+  vpc_zone_identifier = aws_subnet.public_subnet.*.id
   target_group_arns = [ aws_lb_target_group.tf-webservers.arn ]
 
   launch_template {
